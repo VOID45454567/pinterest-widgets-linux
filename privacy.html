@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pinterest Widget</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #667eea;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #764ba2;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .meta {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: November 26, 2026</p>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> This desktop widget only accesses your Pinterest data to display it locally on your device. We don't collect, store, or share any of your information with third parties. Everything stays on your computer.
+        </div>
+
+        <h2>Introduction</h2>
+        <p>Pinterest Widget for Linux ("we", "our", "the application") respects your privacy. This Privacy Policy explains how we handle information when you use our desktop widget application.</p>
+
+        <h2>Information We Access</h2>
+        <p>When you authorize the application to connect to your Pinterest account, we request read-only access to:</p>
+        <ul>
+            <li><strong>Pinterest boards:</strong> Names and metadata of your boards</li>
+            <li><strong>Saved pins:</strong> Images and metadata from your boards and feed</li>
+            <li><strong>Profile information:</strong> Your Pinterest username and profile picture</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>The information accessed from Pinterest is used exclusively to:</p>
+        <ul>
+            <li>Display your selected boards and pins in the desktop widget</li>
+            <li>Cache images locally on your device for faster loading</li>
+            <li>Maintain widget preferences and configuration</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Important:</strong> We do NOT:
+            <ul style="margin-top: 10px;">
+                <li>Upload your data to external servers</li>
+                <li>Share your information with third parties</li>
+                <li>Post, modify, or delete content on your behalf</li>
+                <li>Track your usage or collect analytics</li>
+            </ul>
+        </div>
+
+        <h2>Data Storage</h2>
+        <h3>Local Storage</h3>
+        <p>All data is stored locally on your device in the following locations:</p>
+        <ul>
+            <li><code>~/.cache/pinterest-widget/</code> - Cached images and thumbnails</li>
+            <li><code>~/.config/pinterest-widget/</code> - Application settings and encrypted access tokens</li>
+        </ul>
+
+        <h3>Access Tokens</h3>
+        <p>Your Pinterest OAuth access token is encrypted and stored locally. This token allows the application to access your Pinterest data on your behalf without requiring you to log in repeatedly.</p>
+
+        <h2>Third-Party Services</h2>
+        <h3>Pinterest API</h3>
+        <p>This application integrates with the Pinterest API to access your boards and pins. When you authorize the application:</p>
+        <ul>
+            <li>We request only <strong>read-only permissions</strong> (boards:read, pins:read)</li>
+            <li>Direct communication occurs between your device and Pinterest's servers</li>
+            <li>We do not intercept, modify, or store API responses beyond local caching</li>
+        </ul>
+        <p>Pinterest's handling of your data is governed by their own privacy policy: <a href="https://policy.pinterest.com/privacy-policy" target="_blank">https://policy.pinterest.com/privacy-policy</a></p>
+
+        <h2>Data Retention</h2>
+        <ul>
+            <li><strong>Cached images:</strong> Retained until you clear the cache or uninstall the application</li>
+            <li><strong>Access tokens:</strong> Retained until you revoke access or log out</li>
+            <li><strong>Configuration:</strong> Retained until you uninstall the application</li>
+        </ul>
+        <p>You can clear all locally stored data at any time by removing the directories mentioned above or using the application's logout feature.</p>
+
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li><strong>Revoke access:</strong> Disconnect the application from your Pinterest account at any time through Pinterest's settings</li>
+            <li><strong>Delete data:</strong> Remove all locally cached data by clearing the application cache</li>
+            <li><strong>Control what's displayed:</strong> Choose which boards to display in the widget</li>
+        </ul>
+
+        <h2>Security</h2>
+        <p>We implement security measures to protect your data:</p>
+        <ul>
+            <li>OAuth tokens are encrypted before storage</li>
+            <li>All communication with Pinterest API uses HTTPS</li>
+            <li>No data leaves your device except for API requests to Pinterest</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>This application does not knowingly collect information from children under 13. If you are under 13, please do not use this application.</p>
+
+        <h2>Open Source</h2>
+        <p>This application is open source. You can review the source code to verify our privacy practices at: <a href="https://github.com/username/pinterest-widget" target="_blank">https://github.com/username/pinterest-widget</a></p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted with a new "Last updated" date. Continued use of the application after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>Contact</h2>
+        <p>For questions or concerns about this Privacy Policy, please open an issue on our <a href="https://github.com/username/pinterest-widget/issues" target="_blank">GitHub repository</a>.</p>
+
+        <p style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee; text-align: center; color: #999;">
+            <a href="index.html">← Back to Pinterest Widget</a>
+        </p>
+    </div>
+</body>
+</html>
